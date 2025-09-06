@@ -1,9 +1,11 @@
 import 'package:actividad4/models/products.dart';
 import 'package:actividad4/pages/detalleProducto.dart';
-import 'package:actividad4/pages/registration_and_editing.dart';
+import 'package:actividad4/pages/formularioProducto.dart';
 import 'package:actividad4/services/product_service.dart';
 import 'package:actividad4/widgets/product_widget.dart';
 import 'package:flutter/material.dart';
+
+import '../models/products.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -65,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final result = await Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (_) => RegistrationAndEditing(product: product),
+        builder: (_) => Formularioproducto(product: product),
       ),
     );
 

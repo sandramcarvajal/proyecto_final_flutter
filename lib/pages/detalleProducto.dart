@@ -1,4 +1,4 @@
-import 'package:actividad4/pages/registration_and_editing.dart';
+import 'package:actividad4/pages/formularioProducto.dart';
 import 'package:actividad4/services/product_service.dart';
 import 'package:flutter/material.dart';
 import 'package:actividad4/models/products.dart';
@@ -41,7 +41,7 @@ class _DetalleProductoState extends State<DetalleProducto> {
     final result = await Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (_) => RegistrationAndEditing(product: widget.product),
+        builder: (_) => Formularioproducto(product: widget.product),
       ),
     );
 
